@@ -8,6 +8,7 @@
       <itemPath>AbstractionInterface.h</itemPath>
       <itemPath>Abstraction_OS.h</itemPath>
       <itemPath>Adapter.h</itemPath>
+      <itemPath>Aspect.h</itemPath>
       <itemPath>FractionNumber.h</itemPath>
       <itemPath>Handle.h</itemPath>
       <itemPath>Proxy.h</itemPath>
@@ -22,6 +23,7 @@
                    projectFiles="true">
       <itemPath>Abstraction.cpp</itemPath>
       <itemPath>Abstraction_OS.cpp</itemPath>
+      <itemPath>Aspect.cpp</itemPath>
       <itemPath>FractionNumber.cpp</itemPath>
       <itemPath>Proxy.cpp</itemPath>
       <itemPath>Scenario.cpp</itemPath>
@@ -69,6 +71,10 @@
       <item path="Abstraction_OS.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Adapter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Aspect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Aspect.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FractionNumber.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -128,6 +134,10 @@
       <item path="Abstraction_OS.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Adapter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Aspect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Aspect.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FractionNumber.cpp" ex="false" tool="1" flavor2="0">
       </item>

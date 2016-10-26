@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Abstraction.o \
 	${OBJECTDIR}/Abstraction_OS.o \
+	${OBJECTDIR}/Aspect.o \
 	${OBJECTDIR}/FractionNumber.o \
 	${OBJECTDIR}/Proxy.o \
 	${OBJECTDIR}/Scenario.o \
@@ -77,6 +78,11 @@ ${OBJECTDIR}/Abstraction_OS.o: Abstraction_OS.cpp nbproject/Makefile-${CND_CONF}
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Abstraction_OS.o Abstraction_OS.cpp
+
+${OBJECTDIR}/Aspect.o: Aspect.cpp nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Aspect.o Aspect.cpp
 
 ${OBJECTDIR}/FractionNumber.o: FractionNumber.cpp nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}

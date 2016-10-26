@@ -14,6 +14,8 @@
 #ifndef SCENARIO_H
 #define SCENARIO_H
 
+#include "Traits.h"
+
 namespace OS {
 
     class Scenario {
@@ -25,7 +27,7 @@ namespace OS {
         void enter();
         void leave();
     private:
-
+        Traits<AbstractionInterface>::Aspect aspect;
     };
 }
 #endif /* SCENARIO_H */

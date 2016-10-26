@@ -15,7 +15,7 @@
 #define TRAITS_H
 
 #include "AbstractionInterface.h"
-#include "Scenario.h"
+#include "Aspect.h"
 
 template<typename T>
 struct Traits {
@@ -26,11 +26,7 @@ template<>
 struct Traits<AbstractionInterface> {
     static constexpr bool doublePrecision = false;
     static constexpr bool isRemote = false;
-};
-
-template<>
-struct Traits<OS::Scenario> {
-    static constexpr bool printEnabled = false;
+    typedef Aspect2 Aspect;
 };
 
 #endif /* TRAITS_H */

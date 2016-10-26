@@ -16,6 +16,7 @@
 
 #include "Abstraction_OS.h"
 #include "Scenario.h"
+#include "Traits.h"
 #include <iostream>
 
 namespace OS {
@@ -25,15 +26,13 @@ namespace OS {
         Adapter() {}
         Adapter(const Adapter& orig) {}
         virtual ~Adapter() {}
-    public:
+        
         void operation() {
             std::cout << "void Adapter::operation()" << std::endl;
             this->Scenario::enter();
             this->Abstraction::operation();
             this->Scenario::leave();
         }
-    private:
-
     };
 
 }

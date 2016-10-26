@@ -12,22 +12,28 @@
  */
 
 #include "Scenario.h"
+#include "Traits.h"
 #include <iostream>
+
 namespace OS {
 Scenario::Scenario() {
+    aspect = Traits<AbstractionInterface>::Aspect();
 }
 
 Scenario::Scenario(const Scenario& orig) {
+    aspect = Traits<AbstractionInterface>::Aspect();
 }
 
 Scenario::~Scenario() {
 }
 
 void Scenario::enter() {
-    std::cout << "void Scenario::enter()" << std::endl;
+    std::cout << "void Scenario1::enter()" << std::endl;
+    aspect.enter();
 }
 
 void Scenario::leave() {
     std::cout << "void Scenario::leave()" << std::endl;
+    aspect.leave();
 }
 }

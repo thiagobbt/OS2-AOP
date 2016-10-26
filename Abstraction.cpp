@@ -16,6 +16,8 @@
 
 #include "Handle.h"
 #include "Stub.h"
+#include "Traits.h"
+#include "Scenario.h"
 
 #include <iostream>
 
